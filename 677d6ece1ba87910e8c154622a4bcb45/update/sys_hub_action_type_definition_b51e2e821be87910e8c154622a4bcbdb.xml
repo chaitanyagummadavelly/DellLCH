@@ -1,0 +1,3561 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>post_lch_service_request</internal_name>
+        <label_cache>[{"name":"{{action.ritm}}","label":"action➛RITM","type":"action","ref":"","reference_display":"Requested Item","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"d60faf4d-1bab-47b0-b1ce-deb5f43033c7"}},{"name":"{{action.action}}","label":"action➛action","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ritm.sys_id}}","label":"action➛RITM➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.ritm.cat_item.name}}","label":"action➛RITM➛Item➛Name","type":"action","ref":"","reference_display":"Name","base_type":"translated_text","parent_table_name":"sc_cat_item","column_name":"name","choices":null,"attributes":{}},{"name":"{{step[5b3abb7d-f7d7-46ff-a05b-f5d4df301392].requestbodyjson}}","label":"step➛Payload Builder➛requestBodyJSON","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e298bcb7-295a-4c91-9b67-f89e22338643"}},{"name":"{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <master_snapshot>39c2cbaf1ba83110e8c154622a4bcb50</master_snapshot>
+        <name>POST LCH Service Request</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 22:36:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b51e2e821be87910e8c154622a4bcbdb</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_name>POST LCH Service Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_b51e2e821be87910e8c154622a4bcbdb</sys_update_name>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:17:20</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=b51e2e821be87910e8c154622a4bcbdb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b51e2e821be87910e8c154622a4bcbdb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>b51e2e821be87910e8c154622a4bcbdb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>48877a421b2c7910e8c154622a4bcbb4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-05 18:09:08</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">c4877a421b2c7910e8c154622a4bcb9a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>b51e2e821be87910e8c154622a4bcbdb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>84877a421b2c7910e8c154622a4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">88877a421b2c7910e8c154622a4bcb9f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_b51e2e821be87910e8c154622a4bcbdb^id=b51e2e821be87910e8c154622a4bcbdb"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=b51e2e821be87910e8c154622a4bcbdb^sys_idNOT IN08f776821b2c7910e8c154622a4bcbab,405736421b2c7910e8c154622a4bcb22,b34736421b2c7910e8c154622a4bcb09"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</action>
+        <cid>8204182d-9b49-45f3-8c05-64ffda7444bd</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update RITM</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>08f776821b2c7910e8c154622a4bcbab</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:17:19</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08f776821b2c7910e8c154622a4bcbab"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08f776821b2c7910e8c154622a4bcbab</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>40f776821b2c7910e8c154622a4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:19:24</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08f776821b2c7910e8c154622a4bcbab</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>48f776821b2c7910e8c154622a4bcbee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-07 05:02:23</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ // ... code ...
+ //var item = inputs['reqItem'];
+  var item = new GlideRecord('sc_req_item');
+   item.get(inputs.reqItem);
+  
+ if (inputs['statusCode'] == "200") {
+ item.state = 2;
+ item.stage = "Waiting for Shipping";
+ item.update();
+ }
+ else {
+ item.state = 4;
+ item.stage = "Problem with Submission";
+ item.update();
+ }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=08f776821b2c7910e8c154622a4bcbab"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>08f776821b2c7910e8c154622a4bcbab</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>08f776821b2c7910e8c154622a4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:19:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>reqItem</field>
+        <id>08f776821b2c7910e8c154622a4bcbab</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>44f776821b2c7910e8c154622a4bcbef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-07 05:02:23</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_08f776821b2c7910e8c154622a4bcbab</table>
+        <value>{{action.ritm.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responseBody</field>
+        <id>08f776821b2c7910e8c154622a4bcbab</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>08f776821b2c7910e8c154622a4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:19:24</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_08f776821b2c7910e8c154622a4bcbab</table>
+        <value>{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>08f776821b2c7910e8c154622a4bcbab</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>ccf776821b2c7910e8c154622a4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:19:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Statuscode</field>
+        <id>08f776821b2c7910e8c154622a4bcbab</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>c8f776821b2c7910e8c154622a4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:19:24</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_08f776821b2c7910e8c154622a4bcbab</table>
+        <value>{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=08f776821b2c7910e8c154622a4bcbab"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=08f776821b2c7910e8c154622a4bcbab^sys_idNOT IN08f776821b2c7910e8c154622a4bcbe4,c0f776821b2c7910e8c154622a4bcbaf,df59c7be1b0db510e8c154622a4bcbe9"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responseBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update RITM">08f776821b2c7910e8c154622a4bcbab</model>
+        <model_id>08f776821b2c7910e8c154622a4bcbab</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_08f776821b2c7910e8c154622a4bcbab</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>08f776821b2c7910e8c154622a4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:19:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Statuscode</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update RITM">08f776821b2c7910e8c154622a4bcbab</model>
+        <model_id>08f776821b2c7910e8c154622a4bcbab</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_08f776821b2c7910e8c154622a4bcbab</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:19:24</sys_created_on>
+        <sys_id>c0f776821b2c7910e8c154622a4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:19:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reqItem</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update RITM">08f776821b2c7910e8c154622a4bcbab</model>
+        <model_id>08f776821b2c7910e8c154622a4bcbab</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_08f776821b2c7910e8c154622a4bcbab</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>ckumar</sys_created_by>
+        <sys_created_on>2023-09-07 05:02:23</sys_created_on>
+        <sys_id>df59c7be1b0db510e8c154622a4bcbe9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:44:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=08f776821b2c7910e8c154622a4bcbab"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=08f776821b2c7910e8c154622a4bcbab"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_08f776821b2c7910e8c154622a4bcbab"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</action>
+        <cid>3cb194d3-08f0-4694-85fc-90f2200e28cb</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>405736421b2c7910e8c154622a4bcb22</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:17:18</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=405736421b2c7910e8c154622a4bcb22"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>005736421b2c7910e8c154622a4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>https://apigtwb2cnp.us.dell.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>045736421b2c7910e8c154622a4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>872156821b287910e8c154622a4bcb62</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>085736421b2c7910e8c154622a4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>405736421b2c7910e8c154622a4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>4c5736421b2c7910e8c154622a4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>4c877a421b2c7910e8c154622a4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>845736421b2c7910e8c154622a4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>885736421b2c7910e8c154622a4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Version","value":"1.0"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>8c5736421b2c7910e8c154622a4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>c05736421b2c7910e8c154622a4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>c45736421b2c7910e8c154622a4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>/GE1/boomisit/createServiceRequest</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>405736421b2c7910e8c154622a4bcb22</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>c85736421b2c7910e8c154622a4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_405736421b2c7910e8c154622a4bcb22^id=405736421b2c7910e8c154622a4bcb22"/>
+    <sys_element_mapping action="delete_multiple" query="id=405736421b2c7910e8c154622a4bcb22"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>c05736421b2c7910e8c154622a4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>005736421b2c7910e8c154622a4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>08877a421b2c7910e8c154622a4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[5b3abb7d-f7d7-46ff-a05b-f5d4df301392].requestbodyjson}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>4c5736421b2c7910e8c154622a4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>045736421b2c7910e8c154622a4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>845736421b2c7910e8c154622a4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>885736421b2c7910e8c154622a4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>085736421b2c7910e8c154622a4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>8c5736421b2c7910e8c154622a4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>405736421b2c7910e8c154622a4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>c8877a421b2c7910e8c154622a4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>c45736421b2c7910e8c154622a4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>405736421b2c7910e8c154622a4bcb22</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>c85736421b2c7910e8c154622a4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=405736421b2c7910e8c154622a4bcb22"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=405736421b2c7910e8c154622a4bcb22^sys_idNOT INc05736421b2c7910e8c154622a4bcb46"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=76504fa0-39d6-4562-b2c4-36e513ac2708</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">405736421b2c7910e8c154622a4bcb22</model>
+        <model_id>405736421b2c7910e8c154622a4bcb22</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_405736421b2c7910e8c154622a4bcb22</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>c05736421b2c7910e8c154622a4bcb46</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=405736421b2c7910e8c154622a4bcb22"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_405736421b2c7910e8c154622a4bcb22^sys_idNOT IN845736421b2c7910e8c154622a4bcb49"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_405736421b2c7910e8c154622a4bcb22</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>845736421b2c7910e8c154622a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</action>
+        <cid>5b3abb7d-f7d7-46ff-a05b-f5d4df301392</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Payload Builder</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>b34736421b2c7910e8c154622a4bcb09</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:17:18</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b34736421b2c7910e8c154622a4bcb09"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b34736421b2c7910e8c154622a4bcb09</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>4c5736421b2c7910e8c154622a4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:40</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b34736421b2c7910e8c154622a4bcb09</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>845736421b2c7910e8c154622a4bcb1e</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:17:00</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ try {
+ var itemReq = new GlideRecord('sc_req_item');
+   itemReq.get(inputs.reqItem);
+
+  var itemName = inputs.catitem;
+ 
+ var requestedFor = new GlideRecord('sys_user');
+   requestedFor.get(itemReq.request.requested_for);
+   
+var script = new global.GetDellLCHhardware();
+var details = script.getHardwareItem(itemName);
+
+gs.info("model:" + details.Model);
+gs.info("DeviceType:" + details.DeviceType);
+gs.info("Editon:" + details.Editon);
+gs.info("TenantID:" + details.TenantID);
+gs.info("Version:" + details.Version);
+  
+   
+ var OpenedBy = new GlideRecord('sys_user');
+  OpenedBy.get(itemReq.opened_by);
+  
+ var requestBody = {};
+ var addresses = {};
+ var addArray = [];
+ var oldItem = {};
+ var oldArray = [];
+ requestBody.lob = "mgm";
+ requestBody.msgID = itemReq.getValue('sys_id');
+ requestBody.svcOrderReqNumber = itemReq.getDisplayValue('request');
+ requestBody.svcOrderNumber = "";
+ requestBody.svcOrderReferenceNumber = itemReq.getValue('number');
+ requestBody.svcOrderType = "NEW";
+ requestBody.svcOrderPriority = "LOW"; 
+ requestBody.svcOrderDeliveryType = "";
+ requestBody.specialInstructions = "";
+ requestBody.customerOrderIdentifier = itemReq.getValue('number');
+ requestBody.customerName = requestedFor.getValue('name');
+ requestBody.customerContact = "Cassandra Cupples";// requested by
+ requestBody.customerTelephone = requestedFor.getDisplayValue('mobile_phone');
+ requestBody.customerEmail = requestedFor.getDisplayValue('email');
+ requestBody.customerCompanyBPID = "MGM";
+ requestBody.employeeID = requestedFor.getDisplayValue('user_name');
+ requestBody.employeeType = "STANDARD";// Requested for Level field 
+ requestBody.shipToCompanyName = "";
+ 
+ addresses.addressType = "Ship To";
+ addresses.addressVerified = "true";
+ addresses.locationName = "Home";
+ addresses.companyName = "MGM";
+ addresses.address1 = itemReq.variables.address_line1;// TBD
+ addresses.address2 = itemReq.variables.address_line2;// TBD
+ addresses.city = itemReq.variables.city_locality;// TBD
+ addresses.state = itemReq.variables.state_province;// TBD
+ addresses.postalCode = itemReq.variables.postal_code;// TBD
+ addresses.countryCode = itemReq.variables.country_code;// TBD
+ addArray.push(addresses);// TBD
+ requestBody.addresses = addArray;// TBD
+ requestBody.organizationalUnit = "";
+ requestBody.shippingMethod = "FedEx";
+ requestBody.persona = "LAPTOP BASE"; 
+ requestBody.profile = "default";
+ requestBody.deviceTier = "LATTITUDE 54XX";// from property.
+ requestBody.deviceType = "LAPTOP"; //from property
+ requestBody.kitProfile = "DEVICE ONLY";// TBD
+ requestBody.imageType = "DEFAULT";
+ requestBody.productID = "NA";
+ requestBody.modeledAfter = "";
+ requestBody.hdRetentionIndicator = "False";
+ requestBody.cidCoverage = "False";
+ requestBody.cidCaseIndicator = "";
+ requestBody.requestedDeliveryDate = itemReq.getValue('sys_created_on');//Request ITEM created date timezone TBD
+ requestBody.updateDate = "";//will populate if it is update requested  
+ requestBody.updateReason = "";//will populate if any
+ requestBody.custom = "{ \"memType\": \"AutoPilot\",\"tenantID\":\"ddb8592fed744329bfd2571b7c34699e\",\"domain\":\"MGMRESORTS.COM\",\"memProfile\":\"AutopilotDevices\",\"edition\":\"Windows10\",\"version\":\"21H2\",\"language\":\"US English\"}";//Need to populate via propertytenenet ID addition &amp;version.
+ outputs.requestbodyjson = global.JSON.stringify(requestBody);
+ gs.info("IOP-Integration" + outputs.requestbodyjson);
+ }
+ catch (ex) {
+ gs.error("IOP-Integration Error: " + ex.message);
+ }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b34736421b2c7910e8c154622a4bcb09"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b34736421b2c7910e8c154622a4bcb09</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>045736421b2c7910e8c154622a4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catitem</field>
+        <id>b34736421b2c7910e8c154622a4bcb09</id>
+        <sys_created_by>ckumar</sys_created_by>
+        <sys_created_on>2023-10-17 00:05:48</sys_created_on>
+        <sys_id>fc154cb7db793910002868f813961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:05:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b34736421b2c7910e8c154622a4bcb09</table>
+        <value>{{action.ritm.cat_item.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>reqItem</field>
+        <id>b34736421b2c7910e8c154622a4bcb09</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>805736421b2c7910e8c154622a4bcb1f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-05 04:10:31</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b34736421b2c7910e8c154622a4bcb09</table>
+        <value>{{action.ritm.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>b34736421b2c7910e8c154622a4bcb09</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>c85736421b2c7910e8c154622a4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_b34736421b2c7910e8c154622a4bcb09^id=b34736421b2c7910e8c154622a4bcb09"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=b34736421b2c7910e8c154622a4bcb09"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b34736421b2c7910e8c154622a4bcb09^sys_idNOT IN38154cb7db793910002868f813961973,485ae09e1b0d3110e8c154622a4bcb7f"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=translated_text,uiTypeLabel=Translated Text</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>catitem</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">translated_text</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Payload Builder">b34736421b2c7910e8c154622a4bcb09</model>
+        <model_id>b34736421b2c7910e8c154622a4bcb09</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b34736421b2c7910e8c154622a4bcb09</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>ckumar</sys_created_by>
+        <sys_created_on>2023-10-17 00:05:47</sys_created_on>
+        <sys_id>38154cb7db793910002868f813961973</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:11:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reqItem</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Payload Builder">b34736421b2c7910e8c154622a4bcb09</model>
+        <model_id>b34736421b2c7910e8c154622a4bcb09</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b34736421b2c7910e8c154622a4bcb09</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>ckumar</sys_created_by>
+        <sys_created_on>2023-09-05 04:10:31</sys_created_on>
+        <sys_id>485ae09e1b0d3110e8c154622a4bcb7f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-05 04:23:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b34736421b2c7910e8c154622a4bcb09^sys_idNOT INc05736421b2c7910e8c154622a4bcb15"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e298bcb7-295a-4c91-9b67-f89e22338643</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbodyjson</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBodyJSON</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Payload Builder">b34736421b2c7910e8c154622a4bcb09</model>
+        <model_id>b34736421b2c7910e8c154622a4bcb09</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b34736421b2c7910e8c154622a4bcb09</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>c05736421b2c7910e8c154622a4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b34736421b2c7910e8c154622a4bcb09"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_b34736421b2c7910e8c154622a4bcb09^sys_idNOT INcc5736421b2c7910e8c154622a4bcb18"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbodyjson</element>
+        <help/>
+        <hint/>
+        <label>requestBodyJSON</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b34736421b2c7910e8c154622a4bcb09</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>cc5736421b2c7910e8c154622a4bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=b51e2e821be87910e8c154622a4bcbdb^sys_idNOT INbbd78be71be83110e8c154622a4bcbdd,fb4736421b2c7910e8c154622a4bcb03"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=d60faf4d-1bab-47b0-b1ce-deb5f43033c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</model>
+        <model_id>b51e2e821be87910e8c154622a4bcbdb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_b51e2e821be87910e8c154622a4bcbdb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 16:19:54</sys_created_on>
+        <sys_id>bbd78be71be83110e8c154622a4bcbdd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 16:19:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bbd78be71be83110e8c154622a4bcbdd"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=778a5238-0828-4fe6-8d1e-5e799934e907</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>action</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>action</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</model>
+        <model_id>b51e2e821be87910e8c154622a4bcbdb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_b51e2e821be87910e8c154622a4bcbdb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>fb4736421b2c7910e8c154622a4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fb4736421b2c7910e8c154622a4bcb03"/>
+    <sys_hub_action_output action="delete_multiple" query="model=b51e2e821be87910e8c154622a4bcbdb^sys_idNOT IN88877a421b2c7910e8c154622a4bcb9f,c4877a421b2c7910e8c154622a4bcb9a"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=d648d927-fde9-450e-bfbf-134c221f70da,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</model>
+        <model_id>b51e2e821be87910e8c154622a4bcbdb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b51e2e821be87910e8c154622a4bcbdb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>88877a421b2c7910e8c154622a4bcb9f</sys_id>
+        <sys_mod_count>91</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-10-17 00:17:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88877a421b2c7910e8c154622a4bcb9f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=88877a421b2c7910e8c154622a4bcb9f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=d713fc6b-e569-40c7-8704-3b1eea6eb906</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</model>
+        <model_id>b51e2e821be87910e8c154622a4bcbdb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b51e2e821be87910e8c154622a4bcbdb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>c4877a421b2c7910e8c154622a4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4877a421b2c7910e8c154622a4bcb9a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c4877a421b2c7910e8c154622a4bcb9a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b51e2e821be87910e8c154622a4bcbdb"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=b51e2e821be87910e8c154622a4bcbdb^sys_idNOT IN185736421b2c7910e8c154622a4bcb67"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</action_type_id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:41</sys_created_on>
+        <sys_id>185736421b2c7910e8c154622a4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:41</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=185736421b2c7910e8c154622a4bcb67"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b51e2e821be87910e8c154622a4bcbdb^sys_idNOT IN3bd78be71be83110e8c154622a4bcbe2,fb4736421b2c7910e8c154622a4bcb06"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm</element>
+        <help/>
+        <hint/>
+        <label>RITM</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b51e2e821be87910e8c154622a4bcbdb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 16:19:54</sys_created_on>
+        <sys_id>3bd78be71be83110e8c154622a4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 16:19:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>action</element>
+        <help/>
+        <hint/>
+        <label>action</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b51e2e821be87910e8c154622a4bcbdb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:16:40</sys_created_on>
+        <sys_id>fb4736421b2c7910e8c154622a4bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:16:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b51e2e821be87910e8c154622a4bcbdb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_b51e2e821be87910e8c154622a4bcbdb^sys_idNOT IN48877a421b2c7910e8c154622a4bcbb1,c8877a421b2c7910e8c154622a4bcb9e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b51e2e821be87910e8c154622a4bcbdb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>48877a421b2c7910e8c154622a4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b51e2e821be87910e8c154622a4bcbdb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-10 23:17:30</sys_created_on>
+        <sys_id>c8877a421b2c7910e8c154622a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-10 23:17:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_b51e2e821be87910e8c154622a4bcbdb"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=b51e2e821be87910e8c154622a4bcbdb^sys_idNOT IN8bc24faf1ba83110e8c154622a4bcb53"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8bc24faf1ba83110e8c154622a4bcb53","name":"plan","plan_signature":null}}</plan>
+        <snapshot>01463905dbd9f950002868f8139619bd</snapshot>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8bc24faf1ba83110e8c154622a4bcb53</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:43</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>post_lch_service_request</internal_name>
+        <label_cache>[{"name":"{{action.ritm}}","label":"action➛RITM","type":"action","ref":"","reference_display":"Requested Item","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"d60faf4d-1bab-47b0-b1ce-deb5f43033c7"}},{"name":"{{action.action}}","label":"action➛action","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.ritm.sys_id}}","label":"action➛RITM➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[5b3abb7d-f7d7-46ff-a05b-f5d4df301392].requestbodyjson}}","label":"step➛Payload Builder➛requestBodyJSON","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e298bcb7-295a-4c91-9b67-f89e22338643"}},{"name":"{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <master>true</master>
+        <name>POST LCH Service Request</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="POST LCH Service Request">b51e2e821be87910e8c154622a4bcbdb</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39c2cbaf1ba83110e8c154622a4bcb50</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:38</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=39c2cbaf1ba83110e8c154622a4bcb50"/>
+    <sys_variable_value action="delete_multiple" query="document_key=39c2cbaf1ba83110e8c154622a4bcb50"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>39c2cbaf1ba83110e8c154622a4bcb50</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>0ec2cbaf1ba83110e8c154622a4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">8ec2cbaf1ba83110e8c154622a4bcbe4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>39c2cbaf1ba83110e8c154622a4bcb50</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>cec2cbaf1ba83110e8c154622a4bcbeb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">46c2cbaf1ba83110e8c154622a4bcbe0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_39c2cbaf1ba83110e8c154622a4bcb50^id=39c2cbaf1ba83110e8c154622a4bcb50"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=39c2cbaf1ba83110e8c154622a4bcb50^sys_idNOT IN0ac2cbaf1ba83110e8c154622a4bcbcb,71c2cbaf1ba83110e8c154622a4bcb6b,f9c2cbaf1ba83110e8c154622a4bcbb0"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</action>
+        <cid>8204182d-9b49-45f3-8c05-64ffda7444bd</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update RITM</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>0ac2cbaf1ba83110e8c154622a4bcbcb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0ac2cbaf1ba83110e8c154622a4bcbcb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0ac2cbaf1ba83110e8c154622a4bcbcb</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>4ac2cbaf1ba83110e8c154622a4bcbdc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ // ... code ...
+ //var item = inputs['reqItem'];
+  var item = new GlideRecord('sc_req_item');
+   item.get(inputs.reqItem);
+  
+ if (inputs['statusCode'] == "200") {
+ item.state = 2;
+ item.stage = "Waiting for Shipping";
+ item.update();
+ }
+ else {
+ item.state = 4;
+ item.stage = "Problem with Submission";
+ item.update();
+ }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0ac2cbaf1ba83110e8c154622a4bcbcb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>86c2cbaf1ba83110e8c154622a4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0ac2cbaf1ba83110e8c154622a4bcbcb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>0ac2cbaf1ba83110e8c154622a4bcbcb</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>42c2cbaf1ba83110e8c154622a4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>reqItem</field>
+        <id>0ac2cbaf1ba83110e8c154622a4bcbcb</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>82c2cbaf1ba83110e8c154622a4bcbdd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0ac2cbaf1ba83110e8c154622a4bcbcb</table>
+        <value>{{action.ritm.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>responseBody</field>
+        <id>0ac2cbaf1ba83110e8c154622a4bcbcb</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>46c2cbaf1ba83110e8c154622a4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0ac2cbaf1ba83110e8c154622a4bcbcb</table>
+        <value>{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>0ac2cbaf1ba83110e8c154622a4bcbcb</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>06c2cbaf1ba83110e8c154622a4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Statuscode</field>
+        <id>0ac2cbaf1ba83110e8c154622a4bcbcb</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>0ac2cbaf1ba83110e8c154622a4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0ac2cbaf1ba83110e8c154622a4bcbcb</table>
+        <value>{{step[3cb194d3-08f0-4694-85fc-90f2200e28cb].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=0ac2cbaf1ba83110e8c154622a4bcbcb"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=0ac2cbaf1ba83110e8c154622a4bcbcb^sys_idNOT IN4ac2cbaf1ba83110e8c154622a4bcbd2,c1463905dbd9f950002868f8139619a9,cec2cbaf1ba83110e8c154622a4bcbce"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>responseBody</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>responseBody</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update RITM">0ac2cbaf1ba83110e8c154622a4bcbcb</model>
+        <model_id>0ac2cbaf1ba83110e8c154622a4bcbcb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0ac2cbaf1ba83110e8c154622a4bcbcb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>4ac2cbaf1ba83110e8c154622a4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reqItem</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>reqItem</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update RITM">0ac2cbaf1ba83110e8c154622a4bcbcb</model>
+        <model_id>0ac2cbaf1ba83110e8c154622a4bcbcb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0ac2cbaf1ba83110e8c154622a4bcbcb</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>ckumar</sys_created_by>
+        <sys_created_on>2023-09-13 22:45:39</sys_created_on>
+        <sys_id>c1463905dbd9f950002868f8139619a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Statuscode</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Statuscode</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update RITM">0ac2cbaf1ba83110e8c154622a4bcbcb</model>
+        <model_id>0ac2cbaf1ba83110e8c154622a4bcbcb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0ac2cbaf1ba83110e8c154622a4bcbcb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>cec2cbaf1ba83110e8c154622a4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=0ac2cbaf1ba83110e8c154622a4bcbcb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0ac2cbaf1ba83110e8c154622a4bcbcb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_0ac2cbaf1ba83110e8c154622a4bcbcb"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</action>
+        <cid>5b3abb7d-f7d7-46ff-a05b-f5d4df301392</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Payload Builder</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:39</sys_created_on>
+        <sys_id>71c2cbaf1ba83110e8c154622a4bcb6b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=71c2cbaf1ba83110e8c154622a4bcb6b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>71c2cbaf1ba83110e8c154622a4bcb6b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>75c2cbaf1ba83110e8c154622a4bcbad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+ try {
+ var itemReq = new GlideRecord('sc_req_item');
+   itemReq.get(inputs.reqItem);
+ 
+ var requestedFor = new GlideRecord('sys_user');
+   requestedFor.get(itemReq.request.requested_for);
+   
+ var OpenedBy = new GlideRecord('sys_user');
+  OpenedBy.get(itemReq.opened_by);
+   
+ var requestBody = {};
+ var addresses = {};
+ var addArray = [];
+ var oldItem = {};
+ var oldArray = [];
+ requestBody.lob = "mgm";
+ requestBody.msgID = itemReq.getValue('sys_id');
+ requestBody.svcOrderReqNumber = itemReq.getDisplayValue('request');
+ requestBody.svcOrderNumber = "";
+ requestBody.svcOrderReferenceNumber = itemReq.getValue('number');
+ requestBody.svcOrderType = "NEW";
+ requestBody.svcOrderPriority = "LOW"; 
+ requestBody.svcOrderDeliveryType = "";
+ requestBody.specialInstructions = "";
+ requestBody.customerOrderIdentifier = itemReq.getValue('number');
+ requestBody.customerName = requestedFor.getValue('name');
+ requestBody.customerContact = "Cassandra Cupples";// requested by
+ requestBody.customerTelephone = requestedFor.getDisplayValue('mobile_phone');
+ requestBody.customerEmail = requestedFor.getDisplayValue('email');
+ requestBody.customerCompanyBPID = "MGM";
+ requestBody.employeeID = requestedFor.getDisplayValue('user_name');
+ requestBody.employeeType = "STANDARD";// Requested for Level field 
+ requestBody.shipToCompanyName = "";
+ 
+ addresses.addressType = "Ship To";
+ addresses.addressVerified = "true";
+ addresses.locationName = "Home";
+ addresses.companyName = "MGM";
+ addresses.address1 = itemReq.variables.address_line1;// TBD
+ addresses.address2 = itemReq.variables.address_line2;// TBD
+ addresses.city = itemReq.variables.city_locality;// TBD
+ addresses.state = itemReq.variables.state_province;// TBD
+ addresses.postalCode = itemReq.variables.postal_code;// TBD
+ addresses.countryCode = itemReq.variables.country_code;// TBD
+ addArray.push(addresses);// TBD
+ requestBody.addresses = addArray;// TBD
+ requestBody.organizationalUnit = "";
+ requestBody.shippingMethod = "FedEx";
+ requestBody.persona = "LAPTOP BASE"; 
+ requestBody.profile = "default";
+ requestBody.deviceTier = "LATTITUDE 54XX";// from property.
+ requestBody.deviceType = "LAPTOP";
+ requestBody.kitProfile = "DEVICE ONLY";// TBD
+ requestBody.imageType = "DEFAULT";
+ requestBody.productID = "NA";
+ requestBody.modeledAfter = "";
+ requestBody.hdRetentionIndicator = "False";
+ requestBody.cidCoverage = "False";
+ requestBody.cidCaseIndicator = "";
+ requestBody.requestedDeliveryDate = itemReq.getValue('sys_created_on');//Request ITEM created date timezone TBD
+ requestBody.updateDate = "";//will populate if it is update requested  
+ requestBody.updateReason = "";//will populate if any
+ requestBody.custom = "{ \"memType\": \"AutoPilot\",\"tenantID\":\"ddb8592fed744329bfd2571b7c34699e\",\"domain\":\"MGMRESORTS.COM\",\"memProfile\":\"AutopilotDevices\",\"edition\":\"Windows10\",\"version\":\"21H2\",\"language\":\"US English\"}";//Need to populate via propertytenenet ID addition &amp;version.
+ outputs.requestbodyjson = global.JSON.stringify(requestBody);
+ gs.info("IOP-Integration" + outputs.requestbodyjson);
+ }
+ catch (ex) {
+ gs.error("IOP-Integration Error: " + ex.message);
+ }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>71c2cbaf1ba83110e8c154622a4bcb6b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>7dc2cbaf1ba83110e8c154622a4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=71c2cbaf1ba83110e8c154622a4bcb6b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>71c2cbaf1ba83110e8c154622a4bcb6b</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>f1c2cbaf1ba83110e8c154622a4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>reqItem</field>
+        <id>71c2cbaf1ba83110e8c154622a4bcb6b</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>bdc2cbaf1ba83110e8c154622a4bcbad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_71c2cbaf1ba83110e8c154622a4bcb6b</table>
+        <value>{{action.ritm.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>71c2cbaf1ba83110e8c154622a4bcb6b</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>f9c2cbaf1ba83110e8c154622a4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_71c2cbaf1ba83110e8c154622a4bcb6b^id=71c2cbaf1ba83110e8c154622a4bcb6b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=71c2cbaf1ba83110e8c154622a4bcb6b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=71c2cbaf1ba83110e8c154622a4bcb6b^sys_idNOT IN70463905dbd9f950002868f81396197a"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reqItem</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>reqItem</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Payload Builder">71c2cbaf1ba83110e8c154622a4bcb6b</model>
+        <model_id>71c2cbaf1ba83110e8c154622a4bcb6b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_71c2cbaf1ba83110e8c154622a4bcb6b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>ckumar</sys_created_by>
+        <sys_created_on>2023-09-13 22:45:38</sys_created_on>
+        <sys_id>70463905dbd9f950002868f81396197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=71c2cbaf1ba83110e8c154622a4bcb6b^sys_idNOT IN31c2cbaf1ba83110e8c154622a4bcb80"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e298bcb7-295a-4c91-9b67-f89e22338643</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requestbodyjson</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>requestBodyJSON</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Payload Builder">71c2cbaf1ba83110e8c154622a4bcb6b</model>
+        <model_id>71c2cbaf1ba83110e8c154622a4bcb6b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_71c2cbaf1ba83110e8c154622a4bcb6b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>31c2cbaf1ba83110e8c154622a4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=71c2cbaf1ba83110e8c154622a4bcb6b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_71c2cbaf1ba83110e8c154622a4bcb6b^sys_idNOT IN79c2cbaf1ba83110e8c154622a4bcb83"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requestbodyjson</element>
+        <help/>
+        <hint/>
+        <label>requestBodyJSON</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_71c2cbaf1ba83110e8c154622a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>79c2cbaf1ba83110e8c154622a4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</action>
+        <cid>3cb194d3-08f0-4694-85fc-90f2200e28cb</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>f9c2cbaf1ba83110e8c154622a4bcbb0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f9c2cbaf1ba83110e8c154622a4bcbb0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>02c2cbaf1ba83110e8c154622a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>0ac2cbaf1ba83110e8c154622a4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>0ec2cbaf1ba83110e8c154622a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Version","value":"1.0"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>46c2cbaf1ba83110e8c154622a4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>4ac2cbaf1ba83110e8c154622a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>/GE1/boomisit/createServiceRequest</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>4ec2cbaf1ba83110e8c154622a4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>82c2cbaf1ba83110e8c154622a4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>https://apigtwb2cnp.us.dell.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>86c2cbaf1ba83110e8c154622a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>872156821b287910e8c154622a4bcb62</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>8ac2cbaf1ba83110e8c154622a4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>c2c2cbaf1ba83110e8c154622a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>cac2cbaf1ba83110e8c154622a4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f9c2cbaf1ba83110e8c154622a4bcbb0</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>cec2cbaf1ba83110e8c154622a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f9c2cbaf1ba83110e8c154622a4bcbb0^id=f9c2cbaf1ba83110e8c154622a4bcbb0"/>
+    <sys_element_mapping action="delete_multiple" query="id=f9c2cbaf1ba83110e8c154622a4bcbb0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>82c2cbaf1ba83110e8c154622a4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>cec2cbaf1ba83110e8c154622a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>8ac2cbaf1ba83110e8c154622a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[5b3abb7d-f7d7-46ff-a05b-f5d4df301392].requestbodyjson}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>0ec2cbaf1ba83110e8c154622a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>c2c2cbaf1ba83110e8c154622a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>0ac2cbaf1ba83110e8c154622a4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>4ac2cbaf1ba83110e8c154622a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>06c2cbaf1ba83110e8c154622a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>4ec2cbaf1ba83110e8c154622a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>02c2cbaf1ba83110e8c154622a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>46c2cbaf1ba83110e8c154622a4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>86c2cbaf1ba83110e8c154622a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>f9c2cbaf1ba83110e8c154622a4bcbb0</id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>c6c2cbaf1ba83110e8c154622a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f9c2cbaf1ba83110e8c154622a4bcbb0"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f9c2cbaf1ba83110e8c154622a4bcbb0^sys_idNOT IN46c2cbaf1ba83110e8c154622a4bcbb8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=76504fa0-39d6-4562-b2c4-36e513ac2708</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">f9c2cbaf1ba83110e8c154622a4bcbb0</model>
+        <model_id>f9c2cbaf1ba83110e8c154622a4bcbb0</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f9c2cbaf1ba83110e8c154622a4bcbb0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>46c2cbaf1ba83110e8c154622a4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f9c2cbaf1ba83110e8c154622a4bcbb0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f9c2cbaf1ba83110e8c154622a4bcbb0^sys_idNOT IN86c2cbaf1ba83110e8c154622a4bcbbb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_f9c2cbaf1ba83110e8c154622a4bcbb0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:40</sys_created_on>
+        <sys_id>86c2cbaf1ba83110e8c154622a4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=39c2cbaf1ba83110e8c154622a4bcb50^sys_idNOT IN35c2cbaf1ba83110e8c154622a4bcb66,74b9dcce1b30b150e8c154622a4bcb74"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=778a5238-0828-4fe6-8d1e-5e799934e907</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>action</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>action</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</model>
+        <model_id>39c2cbaf1ba83110e8c154622a4bcb50</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:39</sys_created_on>
+        <sys_id>35c2cbaf1ba83110e8c154622a4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=35c2cbaf1ba83110e8c154622a4bcb66"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=d60faf4d-1bab-47b0-b1ce-deb5f43033c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>RITM</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</model>
+        <model_id>39c2cbaf1ba83110e8c154622a4bcb50</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-22 22:03:46</sys_created_on>
+        <sys_id>74b9dcce1b30b150e8c154622a4bcb74</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-22 22:03:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=74b9dcce1b30b150e8c154622a4bcb74"/>
+    <sys_hub_action_output action="delete_multiple" query="model=39c2cbaf1ba83110e8c154622a4bcb50^sys_idNOT IN46c2cbaf1ba83110e8c154622a4bcbe0,8ec2cbaf1ba83110e8c154622a4bcbe4"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=d713fc6b-e569-40c7-8704-3b1eea6eb906</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</model>
+        <model_id>39c2cbaf1ba83110e8c154622a4bcb50</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>46c2cbaf1ba83110e8c154622a4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=46c2cbaf1ba83110e8c154622a4bcbe0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=46c2cbaf1ba83110e8c154622a4bcbe0"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=d648d927-fde9-450e-bfbf-134c221f70da,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</model>
+        <model_id>39c2cbaf1ba83110e8c154622a4bcb50</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>8ec2cbaf1ba83110e8c154622a4bcbe4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-09-13 22:45:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8ec2cbaf1ba83110e8c154622a4bcbe4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8ec2cbaf1ba83110e8c154622a4bcbe4"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=39c2cbaf1ba83110e8c154622a4bcb50"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=39c2cbaf1ba83110e8c154622a4bcb50^sys_idNOT IN9ec2cbaf1ba83110e8c154622a4bcbed"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="POST LCH Service Request">39c2cbaf1ba83110e8c154622a4bcb50</action_type_id>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>9ec2cbaf1ba83110e8c154622a4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=9ec2cbaf1ba83110e8c154622a4bcbed"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_39c2cbaf1ba83110e8c154622a4bcb50^sys_idNOT IN31c2cbaf1ba83110e8c154622a4bcb69,b8b9dcce1b30b150e8c154622a4bcb7b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>action</element>
+        <help/>
+        <hint/>
+        <label>action</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:39</sys_created_on>
+        <sys_id>31c2cbaf1ba83110e8c154622a4bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ritm</element>
+        <help/>
+        <hint/>
+        <label>RITM</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-22 22:03:46</sys_created_on>
+        <sys_id>b8b9dcce1b30b150e8c154622a4bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-22 22:03:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_39c2cbaf1ba83110e8c154622a4bcb50"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_39c2cbaf1ba83110e8c154622a4bcb50^sys_idNOT INc2c2cbaf1ba83110e8c154622a4bcbe4,c2c2cbaf1ba83110e8c154622a4bcbe9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>c2c2cbaf1ba83110e8c154622a4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_39c2cbaf1ba83110e8c154622a4bcb50</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>537130</sys_created_by>
+        <sys_created_on>2023-08-15 15:57:41</sys_created_on>
+        <sys_id>c2c2cbaf1ba83110e8c154622a4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>537130</sys_updated_by>
+        <sys_updated_on>2023-08-15 15:57:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_39c2cbaf1ba83110e8c154622a4bcb50"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>b51e2e821be87910e8c154622a4bcbdb</sys_id>
+        <latest_snapshot>39c2cbaf1ba83110e8c154622a4bcb50</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch4-hotfix2b-07-25-2023_08-08-2023_0939.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="Lifecycle hub Transform map">f2e394fc1b85fd90e8c154622a4bcb40</map>
+        <reference_value_field/>
+        <source_field>[Script]</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+    if (source.u_itemstatuscode == 'Received') {
+        return "Received";
+    } else if (source.u_itemstatuscode == 'Open') {
+        return "Open";
+    } else if (source.u_itemstatuscode == 'Configuration') {
+        return "Configuration";
+    } else if (source.u_itemstatuscode == 'Ready To Ship') {
+        return "Ready To Ship";
+    } else if (source.u_itemstatuscode == 'POD') {
+        return "POD";
+    } else if (source.u_itemstatuscode == 'Cancelled') {
+        return "Cancelled";
+    } else if (source.u_itemstatuscode == 'ORDER UPDATED') {
+        return "ORDER UPDATED";
+    } else if (source.u_itemstatuscode == 'Hold Customer') {
+        return "Hold Customer";
+    }
+
+})(source);]]></source_script>
+        <source_table>x_mgmmi_dell_lch_a_u_lifecycle_hub_staging</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>ckumar</sys_created_by>
+        <sys_created_on>2023-08-31 11:16:05</sys_created_on>
+        <sys_id>5f2b587c1bc5fd90e8c154622a4bcbb1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>[Script]</sys_name>
+        <sys_package display_value="Dell LCH API Spoke" source="x_mgmmi_dell_lch_a">677d6ece1ba87910e8c154622a4bcb45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell LCH API Spoke">677d6ece1ba87910e8c154622a4bcb45</sys_scope>
+        <sys_update_name>sys_transform_entry_5f2b587c1bc5fd90e8c154622a4bcbb1</sys_update_name>
+        <sys_updated_by>ckumar</sys_updated_by>
+        <sys_updated_on>2023-08-31 11:58:05</sys_updated_on>
+        <target_field>stage</target_field>
+        <target_table>sc_req_item</target_table>
+        <use_source_script>true</use_source_script>
+    </sys_transform_entry>
+</record_update>
